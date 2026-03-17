@@ -3,12 +3,12 @@
 
 h5gg.require(7.9);  // Đảm bảo version hỗ trợ
 
-var h5frida = h5gg.loadPlugin("h5frida", "h5frida.dylib");  
-// Nếu lỗi load, thử tên khác: "h5frida-15.1.24.dylib" hoặc kiểm tra trong H5GG plugin list (thường có sẵn ở bản mlgm66)
+var h5frida = h5gg.loadPlugin("H5GG.dylib");  
+// Nếu lỗi load, thử tên khác hoặc kiểm tra trong H5GG plugin list (thường có sẵn ở bản mlgm66)
 
 if (!h5frida) {
-    alert("❌ Không load được h5frida plugin!\nKiểm tra H5GG TrollStore có plugin h5frida chưa (tải bản mới nếu thiếu).");
-    throw "h5frida load failed";
+    alert("❌ Không load được H5GG plugin!\nKiểm tra H5GG TrollStore có plugin chưa (tải bản mới nếu thiếu).");
+    throw "H5GG load failed";
 }
 
 // Tên binary chính xác cho game này
