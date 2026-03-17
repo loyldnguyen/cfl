@@ -6,7 +6,7 @@ if (!noJBpip) {
     throw "❌ Không load được noJBpip.dylib!\nKiểm tra lại file trong .app của H5GG.";
 }
 
-alert("✅ noJBpip loaded!\nPlugin version: " + noJBpip.pluginVersion());
+alert("noJBpip object: " + JSON.stringify(Object.keys(noJBpip), null, 2));
 
 // Hàm patch (tương tự ActiveCodePatch, nhưng dùng API của noJBpip)
 function patchOffset(moduleName, offset, bytes) {
