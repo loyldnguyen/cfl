@@ -8,7 +8,7 @@ var h5frida = h5gg.loadPlugin("H5GG.dylib");
 
 if (!h5frida) {
     alert("❌ Không load được H5GG plugin!\nKiểm tra H5GG TrollStore có plugin chưa (tải bản mới nếu thiếu).");
-    throw "H5GG load failed";
+    throw "h5frida load failed";
 }
 
 // Tên binary chính xác cho game này
